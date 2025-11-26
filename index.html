@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="blossom">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BloomCare | Breast Wellness Companion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="theme-switcher" aria-label="Change color theme">
+        <button class="theme-btn" data-theme="blossom">Blossom</button>
+        <button class="theme-btn" data-theme="sunset">Sunset</button>
+        <button class="theme-btn" data-theme="midnight">Midnight</button>
+    </div>
+
+    <header class="hero">
+        <div class="hero-copy">
+            <p class="tag">Gentle guidance for every body</p>
+            <h1>Breast cancer awareness through warmth, science, and playful care</h1>
+            <p class="lead">BloomCare blends medical-grade advice, OpenCV-powered visuals, and two cheerful guides to walk you through at-home checks, symptom quizzes, and screening readiness.</p>
+            <div class="hero-actions">
+                <a href="#quiz" class="btn primary">Take the 90-second quiz</a>
+                <a href="#guides" class="btn ghost">Meet your guides</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-glow"></div>
+            <div class="floating-badge">24/7 companion</div>
+            <div class="hero-stat">
+                <span>92%</span>
+                <p>feel calmer after guided check-ins</p>
+            </div>
+            <div class="hero-peek">
+                <p>Next reminder</p>
+                <strong>Sunday, 8am gentle stretch + self-exam</strong>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="insights">
+            <article>
+                <h3>Daily Calm</h3>
+                <p>Grounding rituals and music suggestions before your check.</p>
+            </article>
+            <article>
+                <h3>Clinic Buddy</h3>
+                <p>Pack lists, talking points, and follow-up trackers.</p>
+            </article>
+            <article>
+                <h3>Support Circles</h3>
+                <p>Curated local and virtual groups for every journey.</p>
+            </article>
+        </section>
+
+        <section id="quiz" class="quiz">
+            <div class="quiz-card">
+                <div class="quiz-copy">
+                    <p class="tag">Self triage</p>
+                    <h2>Should you chat with a doctor right now?</h2>
+                    <p>Answer a few body-awareness prompts. Your private responses stay on this device.</p>
+                </div>
+                <form id="wellnessQuiz">
+                    <div class="question">
+                        <h4>Have you noticed any new lumps or firmness?</h4>
+                        <label><input type="radio" name="lump" value="2"> Yes, within the last week</label>
+                        <label><input type="radio" name="lump" value="1"> Unsure, something feels different</label>
+                        <label><input type="radio" name="lump" value="0"> No changes</label>
+                    </div>
+                    <div class="question">
+                        <h4>Any skin changes like dimpling, redness, or texture shifts?</h4>
+                        <label><input type="radio" name="skin" value="2"> Noticeable and new</label>
+                        <label><input type="radio" name="skin" value="1"> Mild or occasional</label>
+                        <label><input type="radio" name="skin" value="0"> None</label>
+                    </div>
+                    <div class="question">
+                        <h4>Do you feel persistent discomfort or pain?</h4>
+                        <label><input type="radio" name="pain" value="2"> Frequent or sharp</label>
+                        <label><input type="radio" name="pain" value="1"> Comes and goes</label>
+                        <label><input type="radio" name="pain" value="0"> No pain</label>
+                    </div>
+                    <div class="question">
+                        <h4>Family history or genetic risk factors?</h4>
+                        <label><input type="radio" name="history" value="2"> Strong (parent or sibling)</label>
+                        <label><input type="radio" name="history" value="1"> Distant relative</label>
+                        <label><input type="radio" name="history" value="0"> None known</label>
+                    </div>
+                    <button type="submit" class="btn primary">Check my status</button>
+                </form>
+            </div>
+            <div class="quiz-result" aria-live="polite"></div>
+        </section>
+
+        <section id="guides" class="guides">
+            <div class="guide-card">
+                <div class="avatar female">
+                    <div class="hair"></div>
+                    <div class="face"></div>
+                    <div class="eyes"></div>
+                    <div class="smile"></div>
+                </div>
+                <h3>Raya</h3>
+                <p>Leads calming breath work and breast massage tutorials designed for all bodies with soft tissue.</p>
+                <ul>
+                    <li>Animated breath pacing</li>
+                    <li>Mirror posture reminders</li>
+                    <li>Monthly cycle tracker</li>
+                </ul>
+            </div>
+            <div class="guide-card">
+                <div class="avatar male">
+                    <div class="hair"></div>
+                    <div class="face"></div>
+                    <div class="eyes"></div>
+                    <div class="smile"></div>
+                </div>
+                <h3>Jun</h3>
+                <p>Specializes in chest-health education for men, trans, and non-binary folks with playful encouragement.</p>
+                <ul>
+                    <li>Muscle-safe palpation guides</li>
+                    <li>Chest binder care tips</li>
+                    <li>Goal-based streak tracking</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="timeline">
+            <div class="timeline-card">
+                <h4>Warm-up</h4>
+                <p>Stretch shoulders, open chest, loosen jaw tension, sip water.</p>
+            </div>
+            <div class="timeline-card">
+                <h4>Mirror scan</h4>
+                <p>Raise arms, flex chest, note symmetry, skin tone, nipple changes.</p>
+            </div>
+            <div class="timeline-card">
+                <h4>Gentle circles</h4>
+                <p>Use pads of three fingers with light-medium pressure in spiral motions.</p>
+            </div>
+            <div class="timeline-card">
+                <h4>Document</h4>
+                <p>Log sensations, capture photos if needed, set next reminder.</p>
+            </div>
+        </section>
+
+        <section class="scanner" id="scanner">
+            <div class="scanner-copy">
+                <p class="tag">OpenCV glow lab</p>
+                <h2>Transform any breast image into a contrast-enhanced map</h2>
+                <p>Upload a mammogram, thermal capture, or illustrative photo to highlight texture shifts using OpenCV.</p>
+                <form id="scanForm" enctype="multipart/form-data">
+                    <label for="scanInput" class="upload">
+                        <input id="scanInput" name="image" type="file" accept="image/*">
+                        <span>Drag or tap to upload</span>
+                    </label>
+                    <button type="submit" class="btn primary">Enhance image</button>
+                </form>
+                <p class="note">Never a diagnosis. Use results to spark conversations with licensed clinicians.</p>
+            </div>
+            <div class="scanner-preview">
+                <div class="preview-frame">
+                    <p>No image yet. Your OpenCV render will appear here.</p>
+                </div>
+                <div class="insight-card"></div>
+            </div>
+        </section>
+
+        <section class="resources">
+            <article>
+                <h3>Screening roadmap</h3>
+                <p>Set reminders for mammograms, ultrasounds, or MRI appointments by age group.</p>
+            </article>
+            <article>
+                <h3>Care kit builder</h3>
+                <p>Create a bag with snacks, compression garments, affirmations, and hydration goals.</p>
+            </article>
+            <article>
+                <h3>Community journal</h3>
+                <p>Share small wins, log sensations, track emotional trends, and celebrate support crew.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>BloomCare is educational support, not a diagnostic tool. Always consult certified clinicians for medical decisions.</p>
+        <p>Designed with care for women, men, trans, and non-binary bodies alike.</p>
+    </footer>
+
+    <script src="/static/js/main.js" defer></script>
+</body>
+</html>
